@@ -11,7 +11,8 @@ from pymongo import MongoClient
 
 class ScrapersPipeline:
     def __init__(self):
-        self.client = MongoClient('mongodb+srv://user_node_example:PvO6Bc4lGmXWsdZj@micluster.shtovoy.mongodb.net/storeDB') #MongoClient('mongodb://harvest:harvestpass@127.0.0.1:27017/cl')
+        #example mongo link
+        self.client = MongoClient('mongodb+srv://user_node_example:PvO6Bc4lGmXWsdZj@micluster.shtovoy.mongodb.net/storeDB')
     def process_item(self, item, spider):
         #db = self.client.cl
         db = self.client.storeDB
